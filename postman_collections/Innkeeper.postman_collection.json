@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "9a9c3b54-67d1-4b56-9434-3769fd344366",
+		"name": "Innkeeper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET an innkeeper",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/innkeeper",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"innkeeper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST an innkeeper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameinnkeeper\": \"Essola\",\r\n    \"surnameinnkeeper\": \"Tonton\",\r\n    \"roleinnkeeper\": \"Innkeeper\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/innkeeper",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"innkeeper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT an inkeeper",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idinnkeeper\": 4,\r\n    \"nameinnkeeper\": \"Mindja\",\r\n    \"surnameinnkeeper\": \"Noemie\",\r\n    \"roleinnkeeper\": \"General manager\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/innkeeper",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"innkeeper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE an innkeeper",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/innkeeper/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"innkeeper",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

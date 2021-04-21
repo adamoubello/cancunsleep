@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "82aabc46-587c-419c-8502-8d8d79681add",
+		"name": "Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET a client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameclient\": \"Mimbou\",\r\n    \"surnameclient\": \"Alèkè\",\r\n    \"genderclient\": \"F\",\r\n    \"birthdayclient\": \"15/12/1990\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idclient\": 6,\r\n    \"nameclient\": \"Ligault\",\r\n    \"surnameclient\": \"Alexandre\",\r\n    \"genderclient\": \"M\",\r\n    \"birthdayclient\": \"05/12/2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/client/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"client",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "c0abf1de-6b51-480f-adee-d215b4a7f735",
+		"name": "Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all booking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idroom\": 3,\r\n    \"idinnkeeper\": 4,\r\n    \"idclient\": 6,\r\n    \"available\": true,\r\n    \"staystart\": \"22/04/2021 23:45:00\",\r\n    \"staystop\": \"24/04/2021 23:47:00\",\r\n    \"duration\": 2,\r\n    \"busied\": false,\r\n    \"comment\": \"Test comparaison dates Soir 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a booking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idroom\": 3,\r\n    \"idinnkeeper\": 4,\r\n    \"idclient\": 6,\r\n    \"iddate\": 23,\r\n    \"available\": true,\r\n    \"staystart\": \"22/04/2021 02:57:00\",\r\n    \"staystop\": \"24/04/2021 02:57:00\",\r\n    \"duration\": 3,\r\n    \"busied\": false,\r\n    \"comment\": \"Passer l'aspirateur et changer les serviettes.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a booking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idroom\": 3,\r\n    \"idinnkeeper\": 4,\r\n    \"idclient\": 6,\r\n    \"iddate\": 22\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/booking/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"booking",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a booking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idroom\": 3,\r\n    \"idinnkeeper\": 4,\r\n    \"idclient\": 6,\r\n    \"iddate\": 23\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/booking/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"booking",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

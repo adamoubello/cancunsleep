@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "9d0b6d1c-1f31-40b8-a729-f25a20458005",
+		"name": "Room",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET a room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberroom\": 1,\r\n    \"bedroom\": 1,\r\n    \"nameroom\": \"Chambre Aniaba\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a room",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idroom\": 3,\r\n    \"numberroom\": 1,\r\n    \"bedroom\": 2,\r\n    \"nameroom\": \"Cancun Room\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a room",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/rest/room/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"room",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
