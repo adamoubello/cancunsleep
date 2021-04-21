@@ -25,13 +25,14 @@ It has been developed for Alten recruitment test.
 - Automatic transparent real time CRUD on Date
 
 ## Installation
-=> Backend: From root folder, execute this command: 'mvn spring-boot:run'.
+=> Backend: 
+- From root folder, execute this command: 'mvn spring-boot:run'.
 
 => Database:
- -create an empty database named 'cancunsleepdb' on a Postgresql 10 running server on port 5432
- -import the database file cancunsleep.sql by executing the following command from pgadmin.exe folder : 
+- create an empty database named 'cancunsleepdb' on a Postgresql 10 running server on port 5432
+- import the database file cancunsleep.sql by executing the following command from pgadmin.exe folder : 
  'psql -h hostname -d databasename -U username -f file.sql'
- -make sure database credentials are right on application.properties file.
+- make sure database credentials are right on application.properties file.
     
 ## API Reference
 Rest API
@@ -42,7 +43,7 @@ Rest API
 - Simulate Http requests with postman: import Postman collections shared in the project.
 
 ## Contribute
-[Want to contribute?]() 
+[Want to contribute?](https://github.com/adamoubello/cancunsleep.git) 
 
 ## Credits
 [Java Time API 8](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/package-summary.html) 
