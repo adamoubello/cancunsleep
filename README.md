@@ -2,7 +2,7 @@
 A demo API of unique hotel in Cancùn. 
 
 ## Motivation
-It has been developed for Alten recruitment test.
+Developed for training.
 
 ## Build status
 [![js-standard-style](https://img.shields.io/badge/Build-OK-brightgreen)]() 
@@ -51,4 +51,4 @@ Rest API
 ## License
 Version 1.0
 
-ALTEN CANADA © [Bello Adamou](https://adamoubello.com)
+BELLO © [Bello Adamou](https://adamoubello.com)
